@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terminal Page</title>
+  <style>
+    :root {
+      --bg: #000000;
+      --text: #33ff33;
+      --text-dim: #1faa1f;
+      --max-width: 900px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Courier New", Courier, monospace;
+      min-height: 100%;
+    }
+
+    body {
+      padding: 32px 20px;
+    }
+
+    .terminal {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      white-space: pre-wrap;
+      word-break: break-word;
+      line-height: 1.6;
+      font-size: 18px;
+      text-shadow: 0 0 6px rgba(51, 255, 51, 0.35);
+    }
+
+    .prompt {
+      color: var(--text-dim);
+      margin-bottom: 1.5rem;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 0.65ch;
+      background: var(--text);
+      margin-left: 0.15ch;
+      animation: blink 1s steps(1, end) infinite;
+      vertical-align: text-bottom;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="terminal">
+    <div class="prompt">&gt; system_boot --read file.txt</div>
+
+    <div id="content">
+VESSEL ID: VX-3 “Quietus Choir”
+
+REGISTRY: Blacklisted / Contract Null
+STATUS: Derelict — uncontrolled drift, atmospheric reentry projected
+
+BASIC SPECS
+Class: Covert Elimination Vessel
+Length: 55 m
+Drive: Nullwake Stealth Drive (ultra-low emission)
+Systems: Advanced biometric locks, silent ops life support
+Armament: Internal only — toxin dispersal, micro-drone deployment
+Crew Capacity: 5–7
+CREW MANIFEST (FINAL RECORD)
+Kael Vire — Commander / Contract Broker
+Soren Pike — Tactical Execution
+Mira Sol — Infiltration Specialist
+Dax Renn — Weapons Systems
+Luth Aras — Intelligence & Surveillance
+“Nyx” (alias) — Probationary Operative (true identity unknown)
+
+      
+    </div>
+
+    <div style="margin-top: 1.5rem;">
+      <span>&gt; _</span><span class="cursor"></span>
+    </div>
+  </main>
+</body>
+</html>
