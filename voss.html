@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terminal Page</title>
+  <style>
+    :root {
+      --bg: #000000;
+      --text: #33ff33;
+      --text-dim: #1faa1f;
+      --max-width: 900px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Courier New", Courier, monospace;
+      min-height: 100%;
+    }
+
+    body {
+      padding: 32px 20px;
+    }
+
+    .terminal {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      white-space: pre-wrap;
+      word-break: break-word;
+      line-height: 1.6;
+      font-size: 18px;
+      text-shadow: 0 0 6px rgba(51, 255, 51, 0.35);
+    }
+
+    .prompt {
+      color: var(--text-dim);
+      margin-bottom: 1.5rem;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 0.65ch;
+      background: var(--text);
+      margin-left: 0.15ch;
+      animation: blink 1s steps(1, end) infinite;
+      vertical-align: text-bottom;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="terminal">
+    <div class="prompt">&gt; system_boot --read file.txt</div>
+
+    <div id="content">
+VESSEL ID: NXS-77 “Gilded Wraith”
+
+###########################################################################
+###########################################################################
+
+SPECIFICATIONS
+Class: Light Infiltration Frigate
+Length: 62 m
+Crew: 6–8
+Drive: Twin Helix Ion Drives (modded, overclocked)
+Stealth Suite: Ghostskin Hull, Active Signal Masking
+Armament: Concealed pulse cannons (x2), breach pods
+
+###########################################################################
+###########################################################################
+
+CREW MANIFEST (LAST VERIFIED)
+Captain Rhea Voss — Command / Tactical
+Jax “Spindle” Morro — Pilot
+Eli Cade — Systems Engineer
+Nyra Kadeem — Netrunner / Intrusion Specialist
+Torv Halek — Security / Boarding Ops
+Lio Fen — Comms & Signal Scrambling
+
+###########################################################################
+###########################################################################
+
+SHIPBOARD COMPUTER LOG — INCIDENT SUMMARY
+[FINAL LOG SEQUENCE — PARTIAL RECOVERY]
+Mission objective: infiltration of Helios Core Finance Array.
+Initial breach successful. External defenses bypassed.
+At timestamp 03:14:22, unauthorized code execution detected within navigation and life support subsystems.
+Intrusion vector: internal systems handshake — source appears to mimic authenticated crew credentials.
+Countermeasures failed. Virus exhibits adaptive architecture. Recursive propagation across all core systems.
+Engine output spiked beyond safe limits. Manual override attempts by Engineering unsuccessful.
+Communications jammed. Signal masking disabled. Vessel exposed.
+Automated Failure Analysis: Target system was a controlled honeypot. Corporate entity anticipated incursion and deployed embedded counter-intrusion payload.
+Final trajectory deviation resulted in atmospheric descent. Structural integrity failure at ~18,000 m.
+
+###########################################################################
+###########################################################################
+
+COMMS LOG — ENCRYPTED CHANNEL // PARTIAL RECOVERY
+[00:42:11] — Captain Rhea Voss → Contact (ID: “LedgerGhost”)
+You said you had a way in. We’re not burning time hovering out here.
+[00:42:27] — LedgerGhost → Voss
+Relax, Captain. Finance Array still runs legacy audit ports. Nobody watches them because nobody’s supposed to know they exist.
+[00:42:39] — Voss
+And you just happen to know.
+[00:42:51] — LedgerGhost
+I write their compliance patches. You think they audit the auditors?
+[00:47:03] — LedgerGhost → Voss
+Uploading access package now. Keys, routes, internal map. One file. Clean.
+[00:47:08] — SYSTEM NOTICE
+Incoming file: /audit_bridge.pkg
+ Scan Result: ⚠ FLAGGED — POSSIBLE COMPROMISE SIGNATURE
+[00:47:12] — Voss → LedgerGhost
+My system doesn’t like your “clean” file. Flagged it the second it touched buffer.
+[00:47:25] — LedgerGhost → Voss
+Of course it did. That’s the obfuscation layer. Looks like hostile code to anything not whitelisted.
+[00:47:34] — Voss
+You’re telling me your backdoor trips intrusion alarms by design?
+[00:47:46] — LedgerGhost
+I’m telling you it looks exactly like the threats their AI is trained to ignore. That’s why it works.
+[00:47:58] — Voss
+Or why it kills us.
+[00:48:06] — LedgerGhost
+If I wanted you dead, Captain, I wouldn’t bother with subtlety. You want the score or not?
+[00:48:19] — SYSTEM NOTICE
+User override: ACCEPT FILE
+Integration into navigation + systems layer initiated
+[00:48:55] — Voss
+Done.  See you on the other side.
+
+END OF LOG
+
+      
+    </div>
+
+    <div style="margin-top: 1.5rem;">
+      <span>&gt; _</span><span class="cursor"></span>
+    </div>
+  </main>
+</body>
+</html>
