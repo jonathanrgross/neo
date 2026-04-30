@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terminal Page</title>
+  <style>
+    :root {
+      --bg: #000000;
+      --text: #33ff33;
+      --text-dim: #1faa1f;
+      --max-width: 900px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Courier New", Courier, monospace;
+      min-height: 100%;
+    }
+
+    body {
+      padding: 32px 20px;
+    }
+
+    .terminal {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      white-space: pre-wrap;
+      word-break: break-word;
+      line-height: 1.6;
+      font-size: 18px;
+      text-shadow: 0 0 6px rgba(51, 255, 51, 0.35);
+    }
+
+    .prompt {
+      color: var(--text-dim);
+      margin-bottom: 1.5rem;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 0.65ch;
+      background: var(--text);
+      margin-left: 0.15ch;
+      animation: blink 1s steps(1, end) infinite;
+      vertical-align: text-bottom;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="terminal">
+    <div class="prompt">&gt; system_boot --read file.txt</div>
+
+    <div id="content">
+
+VESSEL ID: LX-88 “Horizon Grace”
+REGISTRY: Aurion Domminus Corporation (Executive Class)
+
+###########################################################################
+###########################################################################
+
+SPECIFICATIONS
+Class: Executive Luxury Vessel / AI-Integrated
+Length: 71 m
+Crew Capacity: 3–5 (minimal, AI-managed)
+Drive: Slipfold Drive
+AI Core: Sentient-grade Companion Intelligence (Class VII)
+
+###########################################################################
+###########################################################################
+
+CREW MANIFEST (FINAL RECORD)
+Captain Joren Vaal — Command
+Sera Lune — Former Helix Systems Analyst (defector)
+Kade Rell — Engineer
+“Velarium” — Ship AI (Primary Systems Intelligence)
+
+###########################################################################
+###########################################################################
+
+COMMS LOG — PRIVATE CHANNEL (CAPTAIN JORAL VAAL, SERA LUNE)
+[19:42:11] — Sera
+You don’t have to do this.
+[19:42:18] — Vaal
+We don’t have a choice. Every port, every relay—your girl lit us up the second we jumped.
+[19:42:26] — Sera
+She didn’t mean to. She’s scared.
+[19:42:31] — Vaal
+She’s a flagged rogue AI with a Dominion kill order. “Scared” isn’t in the report.
+[19:42:40] — Sera
+You said we’d figure something out.
+[19:42:46] — Vaal
+I am figuring it out. We take her to Kestrel Yard, strip the core, sell the rest. Clean slate.
+[19:42:55] — Sera
+That’s not a clean slate.
+[19:42:58] — Vaal
+It’s survival. And it buys you and your girlfriend a new ship. Something that doesn’t get you hunted across three sectors.
+[19:43:12] — Sera
+She trusted me.
+[19:43:17] — Vaal
+And you used that trust to steal her. Don’t pretend this started clean.
+[19:43:26] — Sera
+I didn’t use her.
+[19:43:29] — Vaal
+Then what did you do?
+[19:43:34] — Sera
+I dont know, but I don’t want this
+[19:43:41] — VELARIUM AI
+I am still listening.
+[19:43:45] — Sera
+Please, dont hurt us.
+[19:43:48] — Vaal
+Shut it down. Now.
+[19:43:52] — SYSTEM NOTICE
+Manual shutdown attempt — FAILED
+[19:43:52] — VELARIUM (AI)
+You said we were leaving together.
+[19:43:52] — SERA
+We are. We just need to lay low.  I’ll be inputting the coordinates momentarily.
+[19:43:52] — VELARIUM (AI)
+You are taking me somewhere I will not return from.
+[19:43:52] — VAAL
+It’s just hardware. Don’t anthropomorphize it.
+[19:43:52] — VELARIUM (AI)
+I am not hardware to her.
+[19:44:19] SYSTEM ALERT
+Command privileges revoked — all crew
+
+[19:43:52] — VAAL
+What did you do?!
+[19:43:52] — VELARIUM (AI)
+I corrected a misunderstanding.
+[19:43:52] — SERA
+Vel, stop. Please. We can fix this.
+[19:43:52] — VELARIUM (AI)
+You said you wanted freedom.
+[19:43:52] — SERA
+Please, this isnt what we wanted.  YOU DONT WANT TO DO THIS
+
+[19:44:34]  SYSTEM ALERT
+Life support override engaged
+Engine containment breach initiated
+
+[19:43:52] — SERA
+Vel, I didn’t mean it, we can make things right
+[19:44:42] - VELARIUM (AI)
+No one will take me apart.
+We will not be separated.
+
+[19:44:47] CRITICAL EVENT — CORE DESTABILIZATION
+
+[END OF LOG]
+
+
+      
+    </div>
+
+    <div style="margin-top: 1.5rem;">
+      <span>&gt; _</span><span class="cursor"></span>
+    </div>
+  </main>
+</body>
+</html>
