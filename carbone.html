@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terminal Page</title>
+  <style>
+    :root {
+      --bg: #000000;
+      --text: #33ff33;
+      --text-dim: #1faa1f;
+      --max-width: 900px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Courier New", Courier, monospace;
+      min-height: 100%;
+    }
+
+    body {
+      padding: 32px 20px;
+    }
+
+    .terminal {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      white-space: pre-wrap;
+      word-break: break-word;
+      line-height: 1.6;
+      font-size: 18px;
+      text-shadow: 0 0 6px rgba(51, 255, 51, 0.35);
+    }
+
+    .prompt {
+      color: var(--text-dim);
+      margin-bottom: 1.5rem;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 0.65ch;
+      background: var(--text);
+      margin-left: 0.15ch;
+      animation: blink 1s steps(1, end) infinite;
+      vertical-align: text-bottom;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="terminal">
+    <div class="prompt">&gt; system_boot --read file.txt</div>
+
+    <div id="content">
+VESSEL ID: CRV-19 “Eclipse”
+REGISTRY: Carbone Syndicate (Obfuscated)
+
+###########################################################################
+###########################################################################
+
+SPECIFICATIONS
+Class: Luxury Courier Yacht (heavily modified)
+Length: 48 m
+Crew Capacity: 4–6
+Drive: WhisperDrive Grav Thrusters (low-signature)
+Defenses: Civilian shielding, aftermarket point defense
+Signature Profile: Masked as high-value executive transport
+
+###########################################################################
+###########################################################################
+
+CREW MANIFEST (LAST VERIFIED)
+Marco Carbone — Acting Commander
+Risa Vale — Pilot
+Galen Stroud — Security Detail
+Ivy-9 — Ship AI / Operations
+
+###########################################################################
+###########################################################################
+
+COMMS LOG — PRIVATE CHANNEL (Marco Carbone, Taz Cole)
+[21:03:14] — Marco
+You hear what I did yet?
+[21:03:22] — Taz
+Word is you pulled something stupid.
+[21:03:29] — Marco
+Stupid? I walked into Kessler’s system and erased his little AI girlfriend. Gone. Wiped her core clean.
+[21:03:41] — Taz
+You hit her? That wasn’t just code, man.
+[21:03:48] — Marco
+Exactly. That’s the point. You don’t win by hitting accounts. You hit what matters.
+[21:03:59] — Taz
+You just escalated things way past business.
+[21:04:06] — Marco
+Good. Let them see it. Let my father see it. I’m not just running errands anymore. I’m ready.
+
+###########################################################################
+###########################################################################
+
+COMMS LOG — PRIVATE CHANNEL (Dante Carbone, Marco Carbone)
+[21:17:55] — Dante
+We need to talk.
+[21:18:02] — Marco
+You saw what happened to Kessler?
+[21:18:05] — Dante
+What the fuck were you thinking?
+[21:18:12] — Dante
+You think this is about strength. About making a statement. But this business runs on rules. Understandings. Lines nobody crosses.
+[21:18:25] — Marco
+ Are you fucking serious? Do you have any idea what it took to pull this off?  What does it take to prove to prove myself to you?
+[21:18:33] — Dante
+What you proved is that I failed as a father.  I wanted to raise an heir.  I’m so sorry.
+[21:18:48] — Marco
+What the fuck are you talking about
+[21:18:54] — Dante
+The day you were born was honestly the greatest day of my life.  People always say that, but its true.  There was nothing in my life more important than you.  I was looking forward to handing the reins to you when you were ready.  That would become the greatest day of my life.  Now… fuck, I don’t know how to go on.
+[21:19:07] — Marco
+I dont know what youre talking about
+[21:19:11] — SYSTEM ALERT
+External Target Lock Detected
+ Source: Autonomous Kill Drone
+[21:19:15] — Marco
+Wait, shit, somethings locked on
+[21:19:21] — Dante
+I know.  I want you to know you were my greatest joy.
+[21:19:27] — Marco
+Wait what the fuck do you mean you know
+[21:19:34] — Dante
+There are rules, Marco. You broke one that keeps the peace.
+[21:19:41] — Marco
+The fuck is wrong with you you fiucking piece of shit did you sell me out
+[21:19:48] — Dante
+There are rules.  That’s what I tried to teach you.  Kessler always could have taken you out, but I’ve had the leverage to protect you.  You took away that leverage.
+[21:19:59] — Marco
+You’re sacrificing me.
+[21:20:18] — Dante (voice degradation detected)
+I’m not able to protect you anymore.
+[21:20:26] — Marco
+No please you need to save me please
+[21:20:32] — SYSTEM ALERT
+Impact trajectory locked — 12 seconds
+[21:20:41] — Dante
+I’m sorry. I wish I taught you better.
+[21:20:48] — Marco
+dad wait
+[21:20:52] — Dante
+Goodbye, Marco.
+
+[END OF LOG — SIGNAL TERMINATED]
+      
+    </div>
+
+    <div style="margin-top: 1.5rem;">
+      <span>&gt; _</span><span class="cursor"></span>
+    </div>
+  </main>
+</body>
+</html>
